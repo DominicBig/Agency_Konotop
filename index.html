@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="media.css">
+    <title>TurAgency</title>
+</head>
+<body style="background-color: rgb(252, 249, 244);">
+    <div class="container grid">
+
+    <header class="header grid">
+
+        <div class="header-logo">
+           <a href="#"><img src="img/Alogo.png" alt="Logo"></a> 
+        </div>
+
+    </header>
+
+
+
+    <nav class="nav">
+        <div class="nav-link">
+            <a class="nav-item" href="#"> About Us</a>
+            <a class="nav-item" href="#"> Hot Tours</a>
+            <a class="nav-item" href="#"> Services</a>
+            <a class="nav-item" href="#"> Links</a>
+            <a class="nav-item" href="#"> Contacts</a>
+     </div>
+        <div class="social">
+            <a href="#"><img src="img/fg.png" alt="Logo"></a> 
+            <a href="#"><img src="img/go.png" alt="Logo"></a> 
+            <a href="#"><img src="img/tw.png" alt="Logo"></a> 
+            <a href="#"><img src="img/wf.png" alt="Logo"></a> 
+        </div>
+    </nav>
+
+
+    <section>
+        <div class="section-content">
+            <h1>BEST PLEASE TO STAY</h1>
+            <p>EXPLORE THE EARTH</p>
+            <img class="earth" src="img/page1_icon5.png" alt="img">
+        </div>
+
+        <div class="hotel-board grid">
+            <div class="hotel"> 
+                <div class="hotel-img">
+                <img src="img/1.jpg" alt="hotel1">
+                </div>
+
+                <div class="hotel-info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quo repudiandae fugiat cupiditate sapiente quod, quos molestiae quam, obcaecati consequuntur debitis, id eligendi molestias quasi inventore. Voluptate, libero. Ipsum, nobis.</p>
+                    <button id="ht1" onclick = 'getMap1(); return false;' > Посмотеть на карте</button>
+                    <div class="output" id="output1" ></div>
+                </div>
+
+            </div>
+
+            <div class="hotel"> 
+                <div class="hotel-img">
+                <img src="img/2.jpg" alt="hotel1">
+                </div>
+
+                <div class="hotel-info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quo repudiandae fugiat cupiditate sapiente quod, quos molestiae quam, obcaecati consequuntur debitis, id eligendi molestias quasi inventore. Voluptate, libero. Ipsum, nobis.</p>
+                    <button id="ht2" onclick = 'getMap2(); return false;' > Посмотеть на карте</button>
+                    <div class="output" id="output2"></div>
+             </div>
+
+            </div>
+
+            <div class="hotel"> 
+                <div class="hotel-img">
+                <img src="img/3.jpg" alt="hotel1">
+                </div>
+
+                <div class="hotel-info">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quo repudiandae fugiat cupiditate sapiente quod, quos molestiae quam, obcaecati consequuntur debitis, id eligendi molestias quasi inventore. Voluptate, libero. Ipsum, nobis.</p>
+                    <button id="ht3" onclick = 'getMap3(); return false;' > Посмотеть на карте</button>
+                    <div class="output" id="output3"></div>
+             </div>
+
+            </div>
+
+            
+                        
+
+        </div>
+
+
+
+    </section>
+
+<footer></footer>
+    <footer>
+        <p>© 2013 PRIVACY POLICY </p>
+    </footer>
+
+
+   
+</div>
+
+
+
+    <script>
+
+        function getMap1()
+        {
+            let map1 = document.getElementById('output1');
+            map1.innerHTML = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12226.501466232268!2d100.8669284720083!3d12.91361986455809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3102966832624093%3A0x58117673fe66e941!2sBig%20Buddha%20Temple!5e1!3m2!1suk!2sua!4v1607090176411!5m2!1suk!2sua" width="300" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>'
+        }
+        function getMap2(){
+            let map2 = document.getElementById('output2');           
+            map2.innerHTML = ' <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5175.947408833701!2d-69.61125366124885!3d18.4469431003125!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf7e3766a85eed%3A0x444f28d10e3d126a!2sPlaya%20P%C3%BAblica%20Boca%20Chica!5e1!3m2!1suk!2sua!4v1607090264344!5m2!1suk!2sua" width="300" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>'
+        }
+        function getMap3(){
+            let map3 = document.getElementById('output3');           
+            map3.innerHTML = ' <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2278.1967409000654!2d12.321338158598813!3d45.4406245108811!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eb1c40ff09ea1%3A0x1a4eee19d0976e9c!2sTrattoria%20Alla%20Ferrata!5e1!3m2!1suk!2sua!4v1607090396576!5m2!1suk!2sua" width="300" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>'
+        }
+       
+        
+
+
+
+    </script>
+</body>
+</html>

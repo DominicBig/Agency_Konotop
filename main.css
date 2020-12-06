@@ -1,0 +1,95 @@
+
+.grid{
+    display: grid;
+}
+.container{
+    margin-right: 30px;
+    margin-left: 30px;
+    box-sizing: border-box;
+}
+
+.header-logo{
+    margin: 50px 20px
+
+}
+/* Navigaton panel*/
+.nav{
+    border-top: 1px solid lightblue;
+    padding-top:  20px;
+    padding-bottom: 20px;;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.nav-link{
+    display: inline-block;
+    font-size: 50px;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    
+    
+}
+.nav-item{
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #343434;
+    font-family: 'Arial', serif;
+    line-height: 20px;
+    font-weight: normal;
+    font-size: 25px;
+    margin-left: 0;
+    margin-right: 10px;
+    
+
+}
+.nav-item:hover{
+    color: rgb(248, 168, 19);
+    font-weight: bold;
+    transition: color .3s ease;
+}
+
+.social{
+    display: inline-block;
+    text-align: right;
+}
+
+/* Section*/
+
+section{
+    text-align: center;
+    
+}
+section h1{
+    font-size: 72px;
+    font-family: sans-serif;
+    margin: 0 0 23px;
+    color: #383939;
+}
+section p{
+    font-size: 26px;
+    margin: 0 0 24px;
+    color: #7e7e7e;
+}
+
+.hotel-board{
+    margin-top: 50px;
+    margin-bottom: 0px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+}
+button{
+    margin-bottom: 10px;
+}
+
+
+
+/* Footer*/
+
+footer{
+    padding: 20px;
+    text-align: center;
+    font-size: 15px;
+}
